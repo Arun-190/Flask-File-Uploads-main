@@ -1,0 +1,18 @@
+body{
+    background-color: pink;
+}
+#submit{
+    background-color: red;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

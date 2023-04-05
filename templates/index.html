@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{{url_for("static",filename="style.css") }}">
+</head>
+<body>
+    <h1>Flask File Uploads Tutorial</h1>
+
+   
+        <div>
+        <form method='POST' enctype='multipart/form-data'>
+            
+            <!-- <input id="csrf_token" name="csrf_token" type="hidden" value="ImFiMzkwMmY1YzE0ZTQ5ODk3ZTRkNjhiNzdkNDUwZmMwZjcwOTBiNDci.ZCyvpg.TwTVSb6lRdWqAz5W8PWLv7gQtTI">
+            <input id="file" name="file" required type="file">
+            <input id="submit" name="submit" type="submit" value="F"> -->
+            
+        {{form.hidden_tag()}}
+        {{form.file()}}
+        {{form.submit()}}
+        
+    </form>
+</div>
+</body>
+</html>
